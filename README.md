@@ -50,17 +50,4 @@ Set API base URL in the left sidebar if different (defaults to `http://127.0.0.1
 The backend constructs a structured prompt:
 > Review this code for readability, modularity, maintainability, and potential bugs. Return a structured review with sections: Overview, Strengths, Issues (with severity), and Actionable Suggestions.
 
-You can swap the model in `backend/llm.py` if you prefer a different HF pipeline.
-
-## Notes
-- First run will download the model (`flan-t5-base`).
-- For better results or faster inference, replace the model with a local or quantized variant.
-- SQLite DB file is `reviews.db` in project root.
-
-## Demo Video
-- Record a short screencast: start backend, run Streamlit, upload a file, show the review and history.
-
-## License
-MIT
-
 
